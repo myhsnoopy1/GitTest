@@ -39,5 +39,5 @@ class DemoController extends Controller{
         return $this->renderPartial('demo',$data);
         
     }
-
+//add func3
 }
