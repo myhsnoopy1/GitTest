@@ -13,7 +13,6 @@ use app\models\EntryForm;
 
 class DemoController extends Controller{
 
-//add func1
     public function actionEntry()
     {
         $model = new EntryForm(['scenario' => 'login']);
@@ -29,7 +28,7 @@ class DemoController extends Controller{
             return $this->render('entry', ['model' => $model]);
         }
     }
-//add func2
+
     public function actionDemo(){
 
         $a = Url::to();
@@ -40,6 +39,5 @@ class DemoController extends Controller{
         return $this->renderPartial('demo',$data);
         
     }
-
 //add func3
 }
